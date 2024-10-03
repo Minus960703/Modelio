@@ -1,10 +1,21 @@
-import { ThemeStateProvider } from '@/context/ThemeStateContext'
+import { LanguageStateProvider      } from '@/context/LanguageStateContext'
+import { LoginStateProvider         } from '@/context/LoginStateContext'
+import { ThemeStateProvider         } from '@/context/ThemeStateContext'
 import React, { ReactNode } from 'react'
 
-function MainLayout(children: ReactNode) {
-  
+interface MainLayoutProps {
+  children: ReactNode
+}
+
+function MainLayout({children}: MainLayoutProps) {
   return (
-    <div>{children}</div>
+    <ThemeStateProvider>
+      <LanguageStateProvider>
+        <LoginStateProvider>
+          {children}
+        </LoginStateProvider>
+      </LanguageStateProvider>
+    </ThemeStateProvider>
   )
 }
 
