@@ -1,0 +1,16 @@
+.header {
+  max-height: 50px;
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+
+  aside {
+    position: fixed;
+    width: 20%;
+    max-width: 20%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+  }
+}
