@@ -29,8 +29,10 @@ a {
 }
 
 header {
-  max-width: 1276px;
-  margin: 0 auto;
+  // max-width: 1276px;
+  max-width: calc(100vw - 20%);
+  margin-left: 20%;
+  // margin: 0 auto;
 }
 
 .dark {
@@ -69,9 +71,8 @@ header {
 
 main {
   max-width: 1276px;
-  margin: 0 auto;
-  min-height: calc(100vh - 80px - 40px - 151px);
-  // max-height: calc(100vh - 80px - 40px - 151px);
+  // margin: 0 auto;
+  min-height: calc(100vh - 50px);
   overflow: hidden;
   padding: 20px;
   display: flex;
@@ -103,8 +104,11 @@ main {
   }
 
   &.home {
-    min-height: calc(100vh - 81px - 40px);
-    max-height: calc(100vh - 81px - 40px);
+    min-width   : calc(100vw - 20%);
+    max-width   : calc(100vw - 20%);
+    min-height  : calc(100vh - 50px);
+    max-height  : calc(100vh - 50px);
+    margin-left : 20%;
   }
 
   .home__title {
