@@ -1,7 +1,4 @@
 import { Header } from '@/components'
-import { LanguageStateProvider      } from '@/context/LanguageStateContext'
-import { LoginStateProvider         } from '@/context/LoginStateContext'
-import { ThemeStateProvider         } from '@/context/ThemeStateContext'
 import React, { ReactNode } from 'react'
 
 interface MainLayoutProps {
@@ -10,15 +7,11 @@ interface MainLayoutProps {
 
 function MainLayout({children}: MainLayoutProps) {
   return (
-    <ThemeStateProvider>
-      <LanguageStateProvider>
-        <LoginStateProvider>
-          <Header />
-          {children}
-        </LoginStateProvider>
-      </LanguageStateProvider>
-    </ThemeStateProvider>
+    <>
+      <Header />
+      {children}
+    </>
   )
 }
 
-export default MainLayout
+export default MainLayout;

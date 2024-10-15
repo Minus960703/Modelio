@@ -39,25 +39,28 @@
       }
     }
   }
+  
+  &.aside__dark {
+    .toggle__btn {
+      span {
+        background-color: $--color-white;
+      }
+    }
+  }
 
   .aside__setting {
     position: absolute;
     top: 50px;
     background-color: $--color-black;
-    border: 1px solide #ccc;
+    border: .3px outset $--color-gray-light;
     border-radius: 2px;
     width: calc(100% - 20px * 2);
-    // height: 300px;
     display: flex;
     flex-wrap: wrap;
-    // flex-wrap: nowrap;
     color: $--color-white;
 
     .aside__profile {
       width: 100%;
-      // display: flex;
-      // align-items: center;
-      // justify-content: center;
       padding: 20px 0;
       height: 110px;
 
@@ -81,21 +84,31 @@
 
     > ul {
       width: 100%;
+      padding-left: 10px;
 
       > li {
         position: relative;
         width: 100%;
         display: flex;
         justify-content: space-between;
+        cursor: pointer;
+
+        & + li {
+          margin-top: 5px;
+        }
 
         .theme {
           position: absolute;
           width: 150px;
-          left: 215px;
+          left: calc(215px - 10px);
           top: -15px;
           background-color: $--color-black;
           box-sizing: border-box;
           padding: 10px;
+          border-width: .3px .3px .3px 0;
+          border-color: $--color-gray-light;
+          border-style: solid;
+          border-radius: 2px;
         }
       }
     }
