@@ -12,12 +12,10 @@ function Header() {
 
   if (isHomePage) {
     return (
-      <>
-        <header className={styles.header}>
-          Recents
-          {isHomePage && <Aside />}
-        </header>
-      </>
+      <header className={styles.header}>
+        Recents
+        {isHomePage && <Aside />}
+      </header>
     )
   } else {
     return (

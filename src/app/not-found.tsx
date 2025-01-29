@@ -1,6 +1,6 @@
 import React from 'react'
 
-function NotFoundPage({}: Props) {
+function NotFoundPage() {
   return (
     <div>NotFoundPage</div>
   )

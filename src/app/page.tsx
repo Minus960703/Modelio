@@ -1,10 +1,10 @@
 import styles from "./page.module.css";
-import { Aside } from '@/components';
+import { Aside, ModelViewer } from '@/components';
 
 function Home() {
   return (
     <main className='home'>
-      home
+      <ModelViewer />
     </main>
   );
 }

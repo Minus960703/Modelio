@@ -1,9 +1,14 @@
+@import '@/styles/DefaultValueVariable.scss';
+
 .header {
+  width: calc(100vw - 20%);
   max-height: 50px;
   min-height: 50px;
+  padding: 0 30px;
   display: flex;
   align-items: center;
-  padding-left: 30px;
+  border-bottom: 1px solid $--color-gray-light;
+  box-sizing: border-box;
 
   aside {
     position: fixed;

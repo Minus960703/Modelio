@@ -72,9 +72,9 @@ header {
 main {
   max-width: 1276px;
   // margin: 0 auto;
-  min-height: calc(100vh - 50px);
-  overflow: hidden;
-  padding: 20px;
+  min-height: calc(100vh - 5px);
+  overflow: auto;
+  // padding: 20px;
   display: flex;
   justify-content: center;
   // align-items: center;
@@ -106,8 +106,8 @@ main {
   &.home {
     min-width   : calc(100vw - 20%);
     max-width   : calc(100vw - 20%);
-    min-height  : calc(100vh - 50px);
-    max-height  : calc(100vh - 50px);
+    min-height  : calc(100vh - 50px - 1px);
+    max-height  : calc(100vh - 50px - 1px);
     margin-left : 20%;
   }
 
